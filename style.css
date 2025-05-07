@@ -1,11 +1,63 @@
 .card {
-    max-width: 18rem; /* Adjust width */
+    max-width: 18rem; /* Default width for medium and larger screens */
     margin: auto; /* Center the card */
+    height: 400px; /* Default height */
 }
+
 .card img {
-    height: 200px; /* Adjust height */
+    height: 200px; /* Fixed height for images */
     object-fit: cover; /* Maintain aspect ratio */
 }
-.navTop{
-    height: 80px;
+
+.card-body {
+    overflow: hidden; /* Prevent text overflow */
+}
+
+.navTop {
+    height: 70px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .card {
+        max-width: 100%; /* Full width for smaller screens */
+        height: auto; /* Allow height to adjust dynamically */
+    }
+
+    .card img {
+        height: 150px; /* Reduce image height for smaller screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .card {
+        max-width: 100%; /* Full width for extra small screens */
+        height: auto; /* Allow height to adjust dynamically */
+    }
+
+    .card img {
+        height: 120px; /* Further reduce image height for extra small screens */
+    }
+}
+.card {
+    max-width: 18rem; /* Default width for medium and larger screens */
+    margin: auto; /* Center the card */
+    height: auto; /* Allow dynamic height */
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+}
+
+.card img {
+    height: 200px; /* Fixed height for images */
+    object-fit: cover; /* Maintain aspect ratio */
+}
+
+.card-body {
+    flex-grow: 1; /* Allow the body to take up available space */
+    overflow: hidden; /* Prevent text overflow */
+}
+
+.card-footer {
+    background-color: #f8f9fa; /* Optional: Add a background color */
+    text-align: center; /* Center align footer content */
 }
