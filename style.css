@@ -1,0 +1,11 @@
+.card {
+    max-width: 18rem; /* Adjust width */
+    margin: auto; /* Center the card */
+}
+.card img {
+    height: 200px; /* Adjust height */
+    object-fit: cover; /* Maintain aspect ratio */
+}
+.navTop{
+    height: 80px;
+}
